@@ -1,10 +1,11 @@
 {
-  "rotechos_version": "2026-10-04",
-  "changelog_es": "Arreglos en las macros, área X530 x Y830, husillo manual, WiFi de respaldo y aviso de actualizaciones",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-04",
+  "rotechos_version": "2026-10-06",
+  "changelog_es": "Ventiladores de la electrónica en AUX1, red RotechOS de respaldo fiable, finales de carrera, postprocesador de Fusion 360",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-06",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "28a71a657d5ab4ad36c2802ee9c8783b775e989065755a8d9fd8e3d8a1523d14",
+  "zip_sha256": "88442119a7f2115c7f263b0260b2cbcbbff00b7e5c19a3d55a5962e0b51ca2d2",
   "versiones": [
-    "2026-10-04"
+    "2026-10-04",
+    "2026-10-06"
   ]
 }
