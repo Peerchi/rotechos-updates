@@ -86,6 +86,20 @@ sobre esa versión). Si la placa es nueva o lleva otra, empieza por el paso 0.
    fichero en tu ordenador. Es lo que te permite volver atrás.
 3. Lee `NOTAS_DE_VERSION.md` de la versión nueva, sobre todo el apartado «Si vienes de…».
 
+### La forma corta · Instalar desde la interfaz (desde la versión 2026-10-09)
+
+- **Con internet** en el dispositivo con el que abres la interfaz: en el aviso de versión
+  nueva, pulsa **Instalar ahora** y confirma.
+- **Sin internet** (por ejemplo, conectado a la red RotechOS): descarga el ZIP de la versión
+  desde otro dispositivo, pásalo al que usas con la máquina y, en CONFIGURACIÓN →
+  ACTUALIZAR (OTA), pulsa **Instalar desde un ZIP** y elige el ZIP **sin descomprimirlo**.
+
+En los dos casos la interfaz comprueba que el ZIP llega entero, escribe `www/`, `sys/`,
+`macros/` y `licenses/`, conserva `config.g`, `config-machine.g` y tu WiFi, y reinicia la
+placa. Tarda unos minutos: no apagues ni cierres la página. Si se corta a mitad, repítelo.
+Si las notas de versión piden cambiar `config.g`, súbelo aparte con la opción A.
+Las versiones anteriores a la 2026-10-09 no traen este botón: actualiza con la opción A o B.
+
 ### Opción A · Desde la interfaz (OTA), sin sacar la tarjeta
 
 1. Descomprime el ZIP en tu ordenador. **No arrastres el `.zip`**: la interfaz lo rechaza.

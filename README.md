@@ -73,9 +73,16 @@ La guía completa, con la actualización y la vuelta atrás, está en
 
 ## Actualizar
 
-La interfaz avisa sola cuando hay una versión nueva. La instalación no es automática:
-haz una copia (CONFIGURACIÓN → RESPALDO), descarga el ZIP y sigue la sección 2 de la guía.
-Tu calibración (`config-machine.g`) y tu WiFi no viajan en el ZIP y no se pisan.
+La interfaz avisa sola cuando hay una versión nueva, y se instala desde ella:
+
+- Con internet en el móvil o el ordenador: **Instalar ahora**, en el propio aviso.
+- Sin internet (por ejemplo, conectado a la red RotechOS): descarga el ZIP en otro momento y
+  usa **Instalar desde un ZIP** en CONFIGURACIÓN → ACTUALIZAR (OTA), sin descomprimirlo.
+
+Nada se instala sin que lo confirmes. Haz antes una copia (CONFIGURACIÓN → RESPALDO). Tu
+calibración (`config-machine.g`), el mapeo de motores (`config.g`) y tu WiFi no se pisan.
+Las versiones anteriores a la 2026-10-09 no traen el instalador: esa primera vez se actualiza
+a mano, con la sección 2 de la guía.
 
 ## Licencia y código fuente
 
