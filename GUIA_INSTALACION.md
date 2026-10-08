@@ -2,7 +2,7 @@
 
 Guía para quien tiene la máquina delante y no es programador. Vale para la versión que
 venga con ella (candidata de lanzamiento, pendiente de validación en banco: lee
-`NOTAS_DE_VERSION.md`).
+`NOTAS_DE_VERSION.md`, dentro del ZIP, o las notas de la página de la versión).
 
 > **Regla que manda sobre todo lo demás:** cada vez que la máquina vaya a moverse después de
 > instalar o actualizar, hazlo **sin material, sin fresa dentro de la pieza y con la mano en
@@ -51,13 +51,14 @@ sobre esa versión). Si la placa es nueva o lleva otra, empieza por el paso 0.
 3. Copia el **contenido** de la carpeta `ROTECHOS/` a la raíz de la tarjeta: tienen que quedar
    `www/`, `sys/`, `macros/`, `firmware/` y `licenses/` directamente en la tarjeta.
 4. Vuelve a poner la tarjeta y enciende.
-5. **Red.** Si la máquina no encuentra tu WiFi, a los ~35 s crea su propia red llamada
-   **RotechOS** (clave de fábrica `rotechos`, o la que te hayan dado). Conéctate a ella, abre
-   `http://192.168.1.1` y, en el aviso naranja, elige:
-   - **Poner mi WiFi:** abre CONFIGURACIÓN → Red; escribe tu red y su clave y pulsa
-     «Conectar a esta red». Si no conecta, la red RotechOS vuelve sola en un par de minutos.
-   - **Seguir con esta red:** para talleres sin WiFi. Desde entonces la máquina arranca
-     directamente en la red RotechOS. Se cambia en CONFIGURACIÓN → Red.
+5. **Red.** De fábrica la máquina arranca directamente en su propia red, llamada
+   **RotechOS** (clave de fábrica `rotechos`). Conéctate a ella y abre `http://192.168.1.1`.
+   Ya puedes trabajar así, sin WiFi en el taller.
+   - **Si prefieres usar tu WiFi:** CONFIGURACIÓN → Red; escribe tu red y su clave y pulsa
+     «Conectar a esta red». Desde entonces arrancará en tu WiFi. Si no conecta, la red
+     RotechOS vuelve sola en un par de minutos.
+   - **Para volver a la red propia:** CONFIGURACIÓN → Red → «Trabajar siempre con la red
+     propia RotechOS».
 
    **Kit con placa nueva:** el módulo WiFi de una Scylla recién comprada puede venir sin su
    firmware, y entonces no crea ninguna red. Se graba una sola vez: conecta el ordenador a la

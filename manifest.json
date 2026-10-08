@@ -1,12 +1,13 @@
 {
-  "rotechos_version": "2026-10-07",
-  "changelog_es": "WiFi desde la interfaz sin cable USB, y todo lo necesario para instalar en una Scylla nueva",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-07",
+  "rotechos_version": "2026-10-08",
+  "changelog_es": "De fábrica arranca en su propia red RotechOS; si usabas tu WiFi, vuelve a unirla en CONFIGURACIÓN → Red",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-08",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "33511fc352e69e2c0443aaaf013cd3dabfdb5a8f312136a128b353ecef5bfa48",
+  "zip_sha256": "16ffc4c4065e5c4c45a786ddf28235b2efc5f032a0d86d580fb99396985728f2",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
-    "2026-10-07"
+    "2026-10-07",
+    "2026-10-08"
   ]
 }

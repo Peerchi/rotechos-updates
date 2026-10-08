@@ -19,6 +19,10 @@ En la página de la versión, en *Assets*:
 | `firmware.bin` | RepRapFirmware 3.5.4 para la Scylla. **Solo** si tu placa es nueva o lleva otra versión. Si una versión no lo trae, mira el paso 1 de abajo. |
 | `SHA256SUMS.txt` | Huellas para comprobar que la descarga está entera. |
 
+Para comprobar la descarga, en la carpeta donde la guardaste: `shasum -a 256 -c SHA256SUMS.txt`
+(macOS y Linux) debe decir `OK` para cada fichero. Lo nuevo de cada versión está en su página,
+como notas de versión, y dentro del ZIP en `NOTAS_DE_VERSION.md`.
+
 Cada versión trae la SD completa: si vas varias versiones atrás, basta con instalar la última.
 
 ## Antes de nada: lo que esto NO es
@@ -56,9 +60,9 @@ La guía completa, con la actualización y la vuelta atrás, está en
    de la tarjeta: tienen que quedar `www/`, `sys/`, `macros/`, `firmware/` y `licenses/`.
 3. **El módulo WiFi**, solo si la placa es nueva y no aparece ninguna red: con la placa
    conectada por USB y un terminal serie a 115200 baudios, envía `M997 S1`. Se hace una vez.
-4. **Primer arranque.** Si no encuentra tu WiFi, a los ~35 s crea su propia red
-   **RotechOS** (clave `rotechos`). Conéctate y abre `http://192.168.1.1`. Desde
-   CONFIGURACIÓN → Red pones tu WiFi.
+4. **Primer arranque.** La máquina arranca directamente en su propia red **RotechOS**
+   (clave `rotechos`). Conéctate y abre `http://192.168.1.1`. Si prefieres tu WiFi, se pone
+   en CONFIGURACIÓN → Red.
 5. **Tu calibración.** Sin `config-machine.g` la máquina arranca con valores prudentes de
    reserva (poca velocidad, área pequeña). El asistente de primer arranque te lleva a medir y
    guardar los tuyos. Si prefieres partir de un fichero, en el ZIP está
