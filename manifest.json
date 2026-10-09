@@ -1,16 +1,17 @@
 {
-  "rotechos_version": "2026-10-09",
-  "changelog_es": "Las actualizaciones se instalan desde la interfaz. Esta vez todavía a mano; las siguientes, con «Instalar ahora»",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-09",
+  "rotechos_version": "2026-10-10",
+  "changelog_es": "El eje X vuelve a su conector de fábrica (X) y la interfaz va más fluida",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-10",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "6ec435356e02b2cd5ad58ca3d5c6e94f20bce1960b332907fc9381d2eb753c02",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/b8fcb27c0d01353fb11901c606d0cb318a31b2da/paquete/rotechos.zip",
-  "paquete_sha256": "6ec435356e02b2cd5ad58ca3d5c6e94f20bce1960b332907fc9381d2eb753c02",
+  "zip_sha256": "2f0124d1430b40c23eee41465dc899b994864b9fbd1d8925a040f7ba93f0457d",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/ed7f1b4e74bf278439f9cc072219517ee031f3ca/paquete/rotechos.zip",
+  "paquete_sha256": "2f0124d1430b40c23eee41465dc899b994864b9fbd1d8925a040f7ba93f0457d",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
     "2026-10-07",
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
   ]
 }
