@@ -1,17 +1,18 @@
 {
-  "rotechos_version": "2026-10-10",
-  "changelog_es": "El eje X vuelve a su conector de fábrica (X) y la interfaz va más fluida",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-10",
+  "rotechos_version": "2026-10-11",
+  "changelog_es": "REARMAR tras el PARO funciona, jog sin HOME si lo desactivas, finales de carrera bien leídos en CONFIGURACIÓN, PIN opcional y WiFi del asistente sin reiniciar.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-11",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "2f0124d1430b40c23eee41465dc899b994864b9fbd1d8925a040f7ba93f0457d",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/ed7f1b4e74bf278439f9cc072219517ee031f3ca/paquete/rotechos.zip",
-  "paquete_sha256": "2f0124d1430b40c23eee41465dc899b994864b9fbd1d8925a040f7ba93f0457d",
+  "zip_sha256": "6b4460ef8d4b856897e936447c1d3a9190bd5f50b4aa54e2731cf96df9c527d4",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/bbaf5f491238b60addae1afbf0bb377a9739acfe/paquete/rotechos.zip",
+  "paquete_sha256": "6b4460ef8d4b856897e936447c1d3a9190bd5f50b4aa54e2731cf96df9c527d4",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
     "2026-10-07",
     "2026-10-08",
     "2026-10-09",
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-11"
   ]
 }
