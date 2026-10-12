@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-13",
-  "changelog_es": "Arranque mas ligero (-36 KB), visor del G-code sin repintado continuo, instalador OTA mas seguro y retoques de aspecto.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-13",
+  "rotechos_version": "2026-10-14",
+  "changelog_es": "Correcciones de seguridad HOME, guardado de motores y movimientos Jog.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-14",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "535d2e8c36fcb06435f44c2d5c14e676755db35aa1101d4ee5ee626e0af64408",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/669483905c7021f6cd8062ae366da3788a4dfa03/paquete/rotechos.zip",
-  "paquete_sha256": "535d2e8c36fcb06435f44c2d5c14e676755db35aa1101d4ee5ee626e0af64408",
+  "zip_sha256": "340b76cf07014d6742ca3edfec7d5416304d51d3a1f68b58fe7069a42bd08785",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/6f33601a9d904545d5a6ca360562a4fe5b9707d6/paquete/rotechos.zip",
+  "paquete_sha256": "340b76cf07014d6742ca3edfec7d5416304d51d3a1f68b58fe7069a42bd08785",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -15,6 +15,7 @@
     "2026-10-10",
     "2026-10-11",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
   ]
 }
