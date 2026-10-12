@@ -1,103 +1,165 @@
 # RotechOS
 
-Interfaz web y macros para fresadoras CNC con **RepRapFirmware 3.5.4** sobre la placa
-**BigTreeTech Scylla V1.0**. Todo vive en la tarjeta SD de la placa y se abre desde el
-navegador del móvil, la tableta o el ordenador: no hay que instalar nada en el PC.
+RotechOS es una interfaz web y un conjunto de macros para una fresadora CNC con
+**RepRapFirmware 3.5.4** sobre una **BTT Scylla V1.0**. La interfaz se sirve desde la
+tarjeta SD de la placa y se abre en un navegador; no hay que instalar un programa en el
+ordenador.
 
-> Este repositorio es el **canal de descargas** de RotechOS. Aquí están las versiones
-> publicadas y el aviso de actualización que consulta la interfaz (`manifest.json`).
+En un ordenador o una tableta se muestra como **RotechOS**. En un teléfono se muestra como
+**RotechOS Pendant**. Es la misma máquina y la misma instalación, con una vista adaptada a
+la pantalla.
 
-## Descargar
+Este repositorio es el canal público de descargas y actualizaciones.
 
-**[Última versión →](https://github.com/Peerchi/rotechos-updates/releases/latest)**
+## Elige tu caso
 
-En la página de la versión, en *Assets*:
-
-| Fichero | Para qué |
+| Si ya tienes RotechOS | Si vas a montar tu propia máquina |
 |---|---|
-| `rotechos-vAAAA.MM.zip` | La tarjeta SD completa: interfaz, macros, configuración base, firmware del módulo WiFi, la plantilla de calibración y las guías. |
-| `firmware.bin` | RepRapFirmware 3.5.4 para la Scylla. **Solo** si tu placa es nueva o lleva otra versión. Si una versión no lo trae, mira el paso 1 de abajo. |
-| `SHA256SUMS.txt` | Huellas para comprobar que la descarga está entera. |
+| Actualiza desde la propia interfaz: **Instalar ahora** con internet o **Instalar desde un ZIP** sin internet. | Instala el firmware de la placa si hace falta, copia RotechOS a una tarjeta SD y calibra tu máquina. |
 
-Para comprobar la descarga, en la carpeta donde la guardaste: `shasum -a 256 -c SHA256SUMS.txt`
-(macOS y Linux) debe decir `OK` para cada fichero. Lo nuevo de cada versión está en su página,
-como notas de versión, y dentro del ZIP en `NOTAS_DE_VERSION.md`.
+La guía completa está en **[GUIA_INSTALACION.md](GUIA_INSTALACION.md)**.
 
-Cada versión trae la SD completa: si vas varias versiones atrás, basta con instalar la última.
+## Descargar una versión
 
-## Antes de nada: lo que esto NO es
+Abre **[la última versión](https://github.com/Peerchi/rotechos-updates/releases/latest)** y
+entra en la sección **Assets**. En la release v2026.10 los ficheros se llaman así:
 
-- **No está validado en tu máquina.** Se desarrolla sobre una fresadora concreta y cada
-  versión indica en sus notas qué falta por probar con la máquina encendida. La primera vez,
-  **sin material, sin fresa dentro de la pieza y con la mano en la seta de emergencia**.
-- **No tiene marcado CE.** Es un kit / retrofit: quien monta la máquina final es el
-  integrador, con su propia autodeclaración.
-- **No reanuda un trabajo tras un corte de luz.** Apaga el husillo y sube la Z, pero el
-  trabajo hay que relanzarlo.
-- **No trae la calibración de nadie.** Pasos por mm, corrientes, área de trabajo y sonda los
-  pones tú: copiar los de otra máquina es la forma más rápida de estrellar un eje.
+| Asset de la release | Cuándo descargarlo |
+|---|---|
+| `rotechos-v2026.10.zip` | Siempre. Es el paquete de RotechOS para actualizar desde la interfaz o preparar una tarjeta SD nueva. |
+| `SHA256SUMS.txt` | Recomendado. Permite comprobar que la descarga no ha quedado dañada. |
+| `firmware.bin` | Solo para una Scylla nueva o para una placa que no tenga RepRapFirmware 3.5.4. Es el firmware de la placa, no el del módulo WiFi. |
+| `MANUAL_USUARIO_ROTECHOS.pdf` | Opcional. Manual de usuario completo. |
 
-## Qué necesitas
+No descargues **Source code (zip)** para instalar RotechOS: no es el paquete de la tarjeta SD.
+Cada release contiene una SD completa, así que quien vaya varias versiones atrás instala
+la última.
 
-- Placa **BTT Scylla V1.0** (STM32H723, drivers TMC2160).
-- Fresadora de 3 ejes X/Y/Z (el 4.º eje A es opcional y viene apagado), finales de carrera
-  y una sonda Z de contacto.
-- Una tarjeta microSD y un ordenador para copiar ficheros.
-- Una seta de emergencia cableada en la alimentación. La interfaz no la sustituye.
+Para verificar los assets, descarga el ZIP, `SHA256SUMS.txt` y, si lo necesitas,
+`firmware.bin`. En macOS o Linux, desde la carpeta que contiene los ficheros, ejecuta:
 
-## Instalación en una placa nueva, en resumen
+```text
+shasum -a 256 -c SHA256SUMS.txt
+```
 
-La guía completa, con la actualización y la vuelta atrás, está en
-**[GUIA_INSTALACION.md](GUIA_INSTALACION.md)** (también va dentro del ZIP).
+La línea del ZIP y, si lo has descargado, la de `firmware.bin` deben terminar en `OK`.
+El PDF no forma parte de `SHA256SUMS.txt`. Si no has descargado `firmware.bin`, comprueba
+solo el hash de la línea del ZIP comparando su salida con `SHA256SUMS.txt`.
 
-1. **Firmware de la placa.** Si la Scylla no lleva RepRapFirmware 3.5.4, copia `firmware.bin`
-   en la raíz de la SD, ponla en la placa y enciéndela: el bootloader lo graba y lo renombra a
-   `FIRMWARE.CUR`. Si la versión no trae `firmware.bin`, el de la Scylla sale del port de
-   RepRapFirmware para placas STM32 de
-   [TeamGloomy](https://github.com/gloomyandy/RepRapFirmware/releases)
-   (placas compatibles: [teamgloomy.github.io](https://teamgloomy.github.io/supported_boards.html)).
-2. **La SD.** Descomprime el ZIP y copia el **contenido** de su carpeta `ROTECHOS/` a la raíz
-   de la tarjeta: tienen que quedar `www/`, `sys/`, `macros/`, `firmware/` y `licenses/`.
-3. **El módulo WiFi**, solo si la placa es nueva y no aparece ninguna red: con la placa
-   conectada por USB y un terminal serie a 115200 baudios, envía `M997 S1`. Se hace una vez.
-4. **Primer arranque.** La máquina arranca directamente en su propia red **RotechOS**
-   (clave `rotechos`). Conéctate y abre `http://192.168.1.1`. Si prefieres tu WiFi, se pone
-   en CONFIGURACIÓN → Red.
-5. **Tu calibración.** Sin `config-machine.g` la máquina arranca con valores prudentes de
-   reserva (poca velocidad, área pequeña). El asistente de primer arranque te lleva a medir y
-   guardar los tuyos. Si prefieres partir de un fichero, en el ZIP está
-   `rotechos-sys/config-machine.g.ejemplo`: léelo entero, cámbialo y cópialo como
-   `0:/sys/config-machine.g`.
-6. **Antes del primer HOME**, mueve cada eje un poco con el JOG y comprueba que va hacia donde
-   dice la pantalla. Un eje al revés se corrige en CONFIGURACIÓN → MOTORES.
+## Actualizar una instalación que ya funciona
 
-## Actualizar
+Antes de actualizar, detén la máquina y asegúrate de que no hay ningún trabajo en marcha.
+Descarga un respaldo desde **CONFIGURACIÓN → RESPALDO**. El respaldo no incluye
+`sys/wifi-passwords.g`, que contiene tus credenciales WiFi; tenlas a mano para volver a
+introducirlas si fuera necesario.
 
-La interfaz avisa sola cuando hay una versión nueva, y se instala desde ella:
+### Con internet: «Instalar ahora»
 
-- Con internet en el móvil o el ordenador: **Instalar ahora**, en el propio aviso.
-- Sin internet (por ejemplo, conectado a la red RotechOS): descarga el ZIP en otro momento y
-  usa **Instalar desde un ZIP** en CONFIGURACIÓN → ACTUALIZAR (OTA), sin descomprimirlo.
+1. Abre la interfaz y espera al aviso de nueva versión, o pulsa **Buscar actualizaciones**
+   en **CONFIGURACIÓN → ACTUALIZAR (OTA)**.
+2. Pulsa **Instalar ahora** y confirma la versión que se muestra.
+3. No apagues la máquina ni cierres la página mientras se descarga y se escribe la tarjeta.
+4. La placa se reinicia al terminar. Antes de hacer HOME, mueve cada eje un poco con JOG y
+   comprueba el sentido del movimiento con la mano en la seta de emergencia.
 
-Nada se instala sin que lo confirmes. Haz antes una copia (CONFIGURACIÓN → RESPALDO). Tu
-calibración (`config-machine.g`), el mapeo de motores (`config.g`) y tu WiFi no se pisan.
-Las versiones anteriores a la 2026-10-09 no traen el instalador: esa primera vez se actualiza
-a mano, con la sección 2 de la guía.
+La interfaz descarga el paquete publicado, comprueba su SHA-256 y pide confirmación antes de
+escribir. Si el dispositivo no tiene internet, usa el método siguiente.
 
-## Licencia y código fuente
+### Sin internet: «Instalar desde un ZIP»
 
-RotechOS se distribuye bajo **GPL-3.0** (ver `ROTECHOS/licenses/` dentro del ZIP). Es una
-obra derivada de Duet Web Control (Duet3D Ltd). La interfaz y las macros van en el ZIP como
-código fuente legible, sin compilar ni ofuscar.
+1. En otro dispositivo con internet, descarga de la release el ZIP exacto, por ejemplo
+   `rotechos-v2026.10.zip`. No lo descomprimas.
+2. Pasa ese ZIP al teléfono, tableta u ordenador que está conectado a la máquina, aunque esa
+   conexión sea únicamente a la red WiFi **RotechOS**.
+3. Entra en **CONFIGURACIÓN → ACTUALIZAR (OTA)**, pulsa **Instalar desde un ZIP** y elige el
+   ZIP sin descomprimir.
+4. Confirma. No apagues la máquina ni cierres la página hasta que termine y se reinicie.
 
-`firmware.bin` es RepRapFirmware 3.5.4 sin modificar (GPL-3.0, Duet3D Ltd) en su port para
-placas STM32. Su código fuente está en
-[Duet3D/RepRapFirmware](https://github.com/Duet3D/RepRapFirmware) y
-[gloomyandy/RepRapFirmware](https://github.com/gloomyandy/RepRapFirmware).
-RepRapFirmware y Duet son marcas de Duet3D Ltd; este proyecto no está afiliado a Duet3D.
+Este instalador comprueba el ZIP y escribe los ficheros de `ROTECHOS/sys/`,
+`ROTECHOS/macros/`, `ROTECHOS/licenses/` y `ROTECHOS/www/`. Conserva `config.g`,
+`config-machine.g`, `config-override.g`, `user-daemon.g` y `wifi-passwords.g` de tu máquina.
+No usa `firmware.bin` ni vuelve a grabar el firmware del módulo WiFi durante una actualización.
+
+Si una subida se interrumpe, la tarjeta puede quedar con parte de los ficheros nuevos. No hay
+vuelta atrás automática: repite la instalación; si la interfaz no arranca, sigue la sección
+correspondiente de la guía.
+
+Las versiones anteriores a la 2026-10-09 no tienen estos dos botones. En ese caso, sigue la
+guía para actualizar manualmente.
+
+## Montar una máquina propia
+
+RotechOS está planteado para **BTT Scylla V1.0 + RepRapFirmware 3.5.4**. Antes de encender
+una máquina nueva, quien la integra debe resolver el cableado, la seta de emergencia, los
+finales de carrera, el husillo, la sonda y la calibración de esa unidad. La interfaz no
+sustituye las protecciones físicas ni proporciona la calibración de otra máquina.
+
+Para una instalación nueva, sigue la sección de instalación de la guía en este orden:
+
+1. Si la placa no tiene RepRapFirmware 3.5.4, usa el asset `firmware.bin` de la release y
+   grábalo primero en la tarjeta SD. Al arrancar, el bootloader debe renombrarlo a
+   `FIRMWARE.CUR`; apaga la placa antes de continuar. Si la release no incluye ese asset, la
+   guía enlaza el port de RepRapFirmware para placas STM32 de TeamGloomy.
+2. Descomprime `rotechos-v2026.10.zip` en el ordenador. Copia el **contenido** de su carpeta
+   `ROTECHOS/` a la raíz de la tarjeta SD. Deben quedar directamente `www/`, `sys/`,
+   `macros/`, `firmware/` y `licenses/`.
+3. El ZIP incluye `ROTECHOS/firmware/WiFiModule_esp32.bin`. Solo hace falta grabarlo con
+   `M997 S1`, desde una conexión USB serie a 115200 baudios, si una placa nueva no crea
+   ninguna red WiFi.
+4. En el primer arranque, la red propia se llama **RotechOS** y usa la clave de fábrica
+   **`rotechos`**. Abre `http://192.168.1.1`. Es una clave conocida: conviene cambiarla antes
+   de dejar esa red accesible a otras personas y, mientras siga siendo la de fábrica, usar la
+   red solo con dispositivos de confianza.
+5. Completa **PRIMER ARRANQUE** y la calibración de tu unidad. Si partes de un fichero, el ZIP
+   trae `rotechos-sys/config-machine.g.ejemplo`: léelo entero, cambia sus valores y cópialo
+   como `0:/sys/config-machine.g`. No copies una calibración de otra máquina.
+6. Antes del primer HOME, mueve cada eje un poco con JOG y comprueba el sentido. La **sonda Z**
+   para medir la altura es un **pulsador de contacto mecánico**, no una sonda inductiva.
+
+El husillo tiene dos variantes documentadas: un **VFD controlado por firmware**, con rango de
+6000 a 24000 RPM en esta configuración, o un **Makita RT0701C manual**, cuyo dial e
+interruptor se manejan físicamente. RotechOS no puede encender ni apagar el Makita desde la
+interfaz.
+
+## Avisos importantes
+
+- No hay marcado CE. Es un kit DIY / retrofit; quien integra la máquina final debe asumir sus
+  obligaciones y comprobaciones.
+- No existe reanudación automática de un trabajo después de un corte de luz. Hay que volver a
+  referenciar la máquina y relanzar el trabajo desde el principio.
+- El PIN HTTP es opcional: una instalación nueva puede abrirse sin PIN. Se define, cambia o
+  quita en **CONFIGURACIÓN → PIN HTTP**. El PIN protege el acceso a la interfaz, no sustituye
+  la seta de emergencia, no cifra la conexión y no es una protección física.
+- No dejes la máquina mecanizando sin vigilancia. En la primera puesta en marcha y tras cada
+  cambio de configuración: sin material, sin fresa dentro de la pieza y con la mano en la
+  seta de emergencia.
+- La seta de emergencia debe estar cableada en la alimentación. Un botón o una orden que
+  dependa del software no la sustituye.
+
+La versión v2026.10 sigue marcada en sus notas como candidata pendiente de validación con la
+máquina encendida. Lee `NOTAS_DE_VERSION.md` antes de ponerla a trabajar.
+
+## Manual de usuario
+
+Consulta el **[Manual de usuario de RotechOS](https://github.com/Peerchi/rotechos-updates/releases/latest/download/MANUAL_USUARIO_ROTECHOS.pdf)**
+(75 páginas) para la puesta en marcha, operación, configuración, mantenimiento y resolución
+de problemas.
+
+## Licencia y atribuciones
+
+RotechOS se distribuye bajo **GPL-3.0**. El ZIP incluye el texto de la licencia y los avisos
+en `ROTECHOS/licenses/gpl-v3.txt`, `ROTECHOS/licenses/NOTICE.txt` y
+`ROTECHOS/licenses/source.txt`; la interfaz, macros y configuración se entregan como texto
+legible.
+
+La interfaz tiene su origen en **Duet Web Control** (Duet3D Ltd) y RotechOS es una obra
+derivada bajo GPL-3.0. La máquina usa **RepRapFirmware 3.5.4**. Consulta sus proyectos de
+código fuente en [Duet3D/RepRapFirmware](https://github.com/Duet3D/RepRapFirmware) y
+[gloomyandy/RepRapFirmware](https://github.com/gloomyandy/RepRapFirmware). RepRapFirmware y
+Duet son marcas de Duet3D Ltd; RotechOS no está afiliado a Duet3D.
 
 ## Si algo va mal
 
-Abre una incidencia contando qué placa y qué versión de RotechOS tienes, qué esperabas y qué
-pasó. Si la interfaz abre, CONFIGURACIÓN → IDENTIDAD → **COPIAR SOPORTE** reúne los datos que
-hacen falta.
+Abre una incidencia contando la placa, la versión de RotechOS, lo que esperabas y lo que
+ocurrió. Si la interfaz abre, **CONFIGURACIÓN → IDENTIDAD → COPIAR SOPORTE** reúne los datos
+útiles para diagnosticarlo.
