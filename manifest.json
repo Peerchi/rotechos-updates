@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-14",
-  "changelog_es": "Correcciones de seguridad HOME, guardado de motores y movimientos Jog.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-14",
+  "rotechos_version": "2026-10-15",
+  "changelog_es": "Correcciones preventivas de seguridad, recuperación y configuración de motores.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-15",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "340b76cf07014d6742ca3edfec7d5416304d51d3a1f68b58fe7069a42bd08785",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/6f33601a9d904545d5a6ca360562a4fe5b9707d6/paquete/rotechos.zip",
-  "paquete_sha256": "340b76cf07014d6742ca3edfec7d5416304d51d3a1f68b58fe7069a42bd08785",
+  "zip_sha256": "23f5ed1ea7d925571f02b6a3b9e7d192087a92741de5a00809934be131210839",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/b4aebc18aeabb5898a4caa2a70f8c765c2669fa3/paquete/rotechos.zip",
+  "paquete_sha256": "23f5ed1ea7d925571f02b6a3b9e7d192087a92741de5a00809934be131210839",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -16,6 +16,7 @@
     "2026-10-11",
     "2026-10-12",
     "2026-10-13",
-    "2026-10-14"
+    "2026-10-14",
+    "2026-10-15"
   ]
 }
