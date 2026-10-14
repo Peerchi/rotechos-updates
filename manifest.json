@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-15",
-  "changelog_es": "Correcciones preventivas de seguridad, recuperación y configuración de motores.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-15",
+  "rotechos_version": "2026-10-16",
+  "changelog_es": "Homing secuencial seguro, corrientes M906 persistentes, LEDs e interfaz más clara; ESP32 original AP/WiFi sin cambios.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-16",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "23f5ed1ea7d925571f02b6a3b9e7d192087a92741de5a00809934be131210839",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/b4aebc18aeabb5898a4caa2a70f8c765c2669fa3/paquete/rotechos.zip",
-  "paquete_sha256": "23f5ed1ea7d925571f02b6a3b9e7d192087a92741de5a00809934be131210839",
+  "zip_sha256": "8c17d02d66415e92cbb370cb8f02aee3399ded2c609cfb073f305a13eac27313",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/3d8d96fb779aa3ac0129b504e27301fdc4693d87/paquete/rotechos.zip",
+  "paquete_sha256": "8c17d02d66415e92cbb370cb8f02aee3399ded2c609cfb073f305a13eac27313",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -17,6 +17,7 @@
     "2026-10-12",
     "2026-10-13",
     "2026-10-14",
-    "2026-10-15"
+    "2026-10-15",
+    "2026-10-16"
   ]
 }

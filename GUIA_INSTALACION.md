@@ -2,8 +2,8 @@
 
 Esta guía es para quien tiene la máquina delante y no necesita ser programador. RotechOS
 está planteado para una **BTT Scylla V1.0** con **RepRapFirmware 3.5.4**.
-La v2026.10 está marcada en sus notas como candidata pendiente de validación con la máquina
-encendida: léelas antes de ponerla a trabajar.
+La v2026.10 está publicada, pero conserva validaciones pendientes con la máquina
+encendida: lee sus notas antes de ponerla a trabajar.
 
 > Regla de seguridad: cada vez que la máquina vaya a moverse después de instalar, actualizar
 > o cambiar una configuración, hazlo sin material, sin fresa dentro de la pieza y con la mano
