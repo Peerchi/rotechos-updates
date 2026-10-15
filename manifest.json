@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-19",
-  "changelog_es": "Recuperación segura del visor G-code y guía visible tras PARO.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-19",
+  "rotechos_version": "2026-10-20",
+  "changelog_es": "Doble toque en el visor: Z segura y viaje XY dentro del área.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-20",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "5d3d2736ab4c833ee8a38e14d20adfaf37ff1f87c5fa43139fafdfd43413c6fa",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/90ff55aee90f640fa904fafb34c2813bc1d04af1/paquete/rotechos.zip",
-  "paquete_sha256": "5d3d2736ab4c833ee8a38e14d20adfaf37ff1f87c5fa43139fafdfd43413c6fa",
+  "zip_sha256": "a3cd0484f9079e537df6cd4e61688943860079fae666901264fc65982c83bbee",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/17f8751a1fc82c3e39a9948b95d135d5ae3bc04e/paquete/rotechos.zip",
+  "paquete_sha256": "a3cd0484f9079e537df6cd4e61688943860079fae666901264fc65982c83bbee",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -21,6 +21,7 @@
     "2026-10-16",
     "2026-10-17",
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
   ]
 }
