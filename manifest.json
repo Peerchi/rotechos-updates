@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-18",
-  "changelog_es": "v2026-10-18: coherencia de versión, límites de seguridad OTA ZIP, accesibilidad del PIN HTTP y gates de interfaz reforzados.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-18",
+  "rotechos_version": "2026-10-19",
+  "changelog_es": "Recuperación segura del visor G-code y guía visible tras PARO.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-19",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "4224af01d0a3405c99a6e7a4306fb2a4d9088afc008555ae9a3c5e171940714b",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/a9f2192d6893da77802bb6e11d8c8afe92349c5b/paquete/rotechos.zip",
-  "paquete_sha256": "4224af01d0a3405c99a6e7a4306fb2a4d9088afc008555ae9a3c5e171940714b",
+  "zip_sha256": "5d3d2736ab4c833ee8a38e14d20adfaf37ff1f87c5fa43139fafdfd43413c6fa",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/90ff55aee90f640fa904fafb34c2813bc1d04af1/paquete/rotechos.zip",
+  "paquete_sha256": "5d3d2736ab4c833ee8a38e14d20adfaf37ff1f87c5fa43139fafdfd43413c6fa",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -20,6 +20,7 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
   ]
 }
