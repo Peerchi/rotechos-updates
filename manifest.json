@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-20",
-  "changelog_es": "Doble toque en el visor: Z segura y viaje XY dentro del área.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-20",
+  "rotechos_version": "2026-10-21",
+  "changelog_es": "Refuerzo interno del bloqueo del PIN: una única fuente de verdad para el tiempo de espera.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-21",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "a3cd0484f9079e537df6cd4e61688943860079fae666901264fc65982c83bbee",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/17f8751a1fc82c3e39a9948b95d135d5ae3bc04e/paquete/rotechos.zip",
-  "paquete_sha256": "a3cd0484f9079e537df6cd4e61688943860079fae666901264fc65982c83bbee",
+  "zip_sha256": "1678d9cfa70664172b91b3b580fe0540a54fd295643d6823566b3c44fe178d24",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/00016d018a7737767f46420a6a3a38f18957ec3a/paquete/rotechos.zip",
+  "paquete_sha256": "1678d9cfa70664172b91b3b580fe0540a54fd295643d6823566b3c44fe178d24",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -22,6 +22,7 @@
     "2026-10-17",
     "2026-10-18",
     "2026-10-19",
-    "2026-10-20"
+    "2026-10-20",
+    "2026-10-21"
   ]
 }
