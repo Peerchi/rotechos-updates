@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-23",
-  "changelog_es": "Z segura que nunca baja, ESC para con diálogos abiertos, HOME obligatorio para empezar y asistente más seguro",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-23",
+  "rotechos_version": "2026-10-24",
+  "changelog_es": "Actualizar trae las mejoras de config.g sin tocar los ajustes de tu máquina",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-24",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "d0bfd66d797e7c0071ac0d5e69bd5196ff82a731100eb8dea23364cd1bcba73a",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/0f8bf94bd38b747df64f93dac83ed0f5d4a20876/paquete/rotechos.zip",
-  "paquete_sha256": "d0bfd66d797e7c0071ac0d5e69bd5196ff82a731100eb8dea23364cd1bcba73a",
+  "zip_sha256": "2ef54e0afb5af02a565e16f2799336e6e38f7dc498a284720b2f125952960414",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/b3a12ef2a0dbe274c82822e07674dacd18787bcc/paquete/rotechos.zip",
+  "paquete_sha256": "2ef54e0afb5af02a565e16f2799336e6e38f7dc498a284720b2f125952960414",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -25,6 +25,7 @@
     "2026-10-20",
     "2026-10-21",
     "2026-10-22",
-    "2026-10-23"
+    "2026-10-23",
+    "2026-10-24"
   ]
 }
