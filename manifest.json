@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-25",
-  "changelog_es": "El escudo de finales para también el HOME y los palpados, visor con la mesa de la máquina, marca de empresa opcional y manual nuevo",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-25",
+  "rotechos_version": "2026-10-26",
+  "changelog_es": "Bordeador sin bajadas de más, husillo que confirma el apagado y asistente más seguro",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-26",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "3a89add81ec5fe16c210df9f6c899e64129e0aa2c655512b14516b35eaaf0b0d",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/9865306340b7253b40941911403bbef845143cc7/paquete/rotechos.zip",
-  "paquete_sha256": "3a89add81ec5fe16c210df9f6c899e64129e0aa2c655512b14516b35eaaf0b0d",
+  "zip_sha256": "cdcece3eb739bd0dd1634f43adf68904b15c5dc16429ad6ccb42e2230a71e1d2",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/1bb0c98aa392bd515395a56db45e34ca81251f7d/paquete/rotechos.zip",
+  "paquete_sha256": "cdcece3eb739bd0dd1634f43adf68904b15c5dc16429ad6ccb42e2230a71e1d2",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -27,6 +27,7 @@
     "2026-10-22",
     "2026-10-23",
     "2026-10-24",
-    "2026-10-25"
+    "2026-10-25",
+    "2026-10-26"
   ]
 }
