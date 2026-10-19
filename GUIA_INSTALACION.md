@@ -201,14 +201,16 @@ Si la red RotechOS ya aparece, no repitas este paso.
 ### Paso 3: primer arranque y red
 
 1. Vuelve a poner la tarjeta SD y enciende.
-2. La máquina crea su propia red WiFi **RotechOS** con la clave de fábrica **`rotechos`**.
+2. La máquina crea su propia red WiFi **RotechOS** con una clave única para esa máquina. Léela en la etiqueta entregada con ella o, si no la tienes, en CONFIGURACIÓN → Red.
 3. Conecta el móvil, tableta u ordenador a esa red y abre `http://192.168.1.1`.
 4. Si quieres usar la red WiFi del taller, entra en **CONFIGURACIÓN → Red** y configúrala.
    Si la máquina no consigue conectarse, la red propia RotechOS vuelve a estar disponible.
 
-La clave `rotechos` es conocida y conviene cambiarla antes de dejar la red accesible a otras
-personas. Mientras siga siendo la clave de fábrica, usa esa red solo con dispositivos de
-confianza y, si la integras en una red del taller, mantenla aislada de redes no confiables.
+La clave se guarda además en `ROTECHOS/sys/ap-key.g`, que queda fuera de la OTA. Si pierdes
+la etiqueta, apaga la máquina, saca la SD, lee ese fichero con un lector y vuelve a colocarla.
+También puedes usar CONFIGURACIÓN → Red → «Generar otra clave», confirmar y volver a imprimir
+la etiqueta. Si el fichero falta o está corrupto, la máquina conserva temporalmente la clave
+conocida `rotechos` como fallback y la interfaz la indicará.
 
 El PIN HTTP es opcional: una instalación nueva abre la interfaz sin PIN. Puedes definirlo,
 cambiarlo o quitarlo en **CONFIGURACIÓN → PIN HTTP**. El PIN solo controla el acceso a la
@@ -244,6 +246,7 @@ El instalador de la interfaz conserva los ficheros de tu máquina, entre ellos:
 - `sys/config.g`: mapeo y configuración de motores.
 - `sys/config-override.g` y `sys/user-daemon.g`, si existen.
 - `sys/wifi-passwords.g`: credenciales de tu WiFi.
+- `sys/ap-key.g`: clave propia del punto de acceso de esta máquina; la OTA no la toca.
 
 Por eso una actualización normal no instala el `firmware.bin` de la placa ni el firmware del
 módulo WiFi. Si las notas de una release piden modificar `config.g`, hazlo solo siguiendo esas

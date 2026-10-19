@@ -142,7 +142,7 @@ máquina encendida. Lee `NOTAS_DE_VERSION.md` antes de ponerla a trabajar.
 ## Manual de usuario
 
 Consulta el **[Manual de usuario de RotechOS](https://github.com/Peerchi/rotechos-updates/releases/latest/download/MANUAL_USUARIO_ROTECHOS.pdf)**
-(75 páginas) para la puesta en marcha, operación, configuración, mantenimiento y resolución
+(69 páginas) para la puesta en marcha, operación, configuración, mantenimiento y resolución
 de problemas.
 
 ## Licencia y atribuciones
