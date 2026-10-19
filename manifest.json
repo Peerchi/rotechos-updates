@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-28",
-  "changelog_es": "Posición de máquina fluida y jog continuo por teclado; incluye correcciones de configuración, homing y seguridad de actualización.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-28",
+  "rotechos_version": "2026-10-29",
+  "changelog_es": "Actualización OTA: pausa y reanudación seguras, preservación de configuración, marca y correcciones de interfaz.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-29",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "75ef0500e2f0bf8a4ef73fb64ca981dcc6834d581f5b5ae0f9998b2e4e95e7ee",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/eaa0a97f87b9287f70d118f813d6e4fc49c5bfab/paquete/rotechos.zip",
-  "paquete_sha256": "75ef0500e2f0bf8a4ef73fb64ca981dcc6834d581f5b5ae0f9998b2e4e95e7ee",
+  "zip_sha256": "52d51b4647f04ba5cf4d634158412dd90af8a44c7ad08ba120b235710c2a21f6",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/e5b4f8108ad9eb5b5179aaed4967ad0b7068d57f/paquete/rotechos.zip",
+  "paquete_sha256": "52d51b4647f04ba5cf4d634158412dd90af8a44c7ad08ba120b235710c2a21f6",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -29,6 +29,7 @@
     "2026-10-24",
     "2026-10-25",
     "2026-10-26",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
   ]
 }
