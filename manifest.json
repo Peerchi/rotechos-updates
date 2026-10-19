@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-29",
-  "changelog_es": "Actualización OTA: pausa y reanudación seguras, preservación de configuración, marca y correcciones de interfaz.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-29",
+  "rotechos_version": "2026-10-30",
+  "changelog_es": "OTA 2026-10-30: actualización segura con transacción, control de espacio y estado de la SD, conflictos de macros, carga manual protegida, PWA coherente con HTTP y mejoras de interfaz.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-30",
   "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "52d51b4647f04ba5cf4d634158412dd90af8a44c7ad08ba120b235710c2a21f6",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/e5b4f8108ad9eb5b5179aaed4967ad0b7068d57f/paquete/rotechos.zip",
-  "paquete_sha256": "52d51b4647f04ba5cf4d634158412dd90af8a44c7ad08ba120b235710c2a21f6",
+  "zip_sha256": "0084a9578c559e1f5f5614c5fa24e8337618c61f94c972644540a4df5870912a",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/930b2cf8e9c524a720f4a76617ce2361ab38a143/paquete/rotechos.zip",
+  "paquete_sha256": "0084a9578c559e1f5f5614c5fa24e8337618c61f94c972644540a4df5870912a",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -30,6 +30,7 @@
     "2026-10-25",
     "2026-10-26",
     "2026-10-28",
-    "2026-10-29"
+    "2026-10-29",
+    "2026-10-30"
   ]
 }
