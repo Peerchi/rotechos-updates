@@ -2,7 +2,7 @@
 
 Esta guía es para quien tiene la máquina delante y no necesita ser programador. RotechOS
 está planteado para una **BTT Scylla V1.0** con **RepRapFirmware 3.5.4**.
-La v2026.10 está publicada, pero conserva validaciones pendientes con la máquina
+La v2026.11 está publicada, pero conserva validaciones pendientes con la máquina
 encendida: lee sus notas antes de ponerla a trabajar.
 
 > Regla de seguridad: cada vez que la máquina vaya a moverse después de instalar, actualizar
@@ -20,21 +20,21 @@ Si solo quieres consultar cómo se usa la interfaz, tienes el
 ## Descargar la release correcta
 
 Abre **[la última release](https://github.com/Peerchi/rotechos-updates/releases/latest)** y usa
-la sección **Assets**. Para la v2026.10, el paquete se llama exactamente
-`rotechos-v2026.10.zip`.
+la sección **Assets**. Para la v2026.11, el paquete se llama exactamente
+`rotechos-v2026.11.zip`.
 
 Descarga según tu caso:
 
 | Fichero | Uso |
 |---|---|
-| `rotechos-v2026.10.zip` | Siempre. Sirve para actualizar desde la interfaz y para preparar una SD nueva. |
+| `rotechos-v2026.11.zip` | Siempre. Sirve para actualizar desde la interfaz y para preparar una SD nueva. |
 | `SHA256SUMS.txt` | Recomendado para comprobar la descarga. |
 | `firmware.bin` | Solo para una placa nueva o una placa que no tenga RepRapFirmware 3.5.4. Es firmware de la placa y va separado del ZIP. |
 | `MANUAL_USUARIO_ROTECHOS.pdf` | Opcional. Manual de usuario. No se copia a la SD. |
 
 No uses **Source code (zip)**. No es el paquete instalable.
 
-### Contenido real de `rotechos-v2026.10.zip`
+### Contenido real de `rotechos-v2026.11.zip`
 
 El listado comprobado con `unzip -l` contiene 208 entradas. La estructura que debes reconocer
 es esta:
@@ -82,7 +82,7 @@ shasum -a 256 -c SHA256SUMS.txt
 
 La línea del ZIP y, si lo has descargado, la de `firmware.bin` deben mostrar `OK`. El PDF no
 forma parte de `SHA256SUMS.txt`. Si solo has descargado el ZIP, compara manualmente la salida
-de `shasum -a 256 rotechos-v2026.10.zip` con la línea correspondiente del fichero de sumas.
+de `shasum -a 256 rotechos-v2026.11.zip` con la línea correspondiente del fichero de sumas.
 
 ## 1. Actualizar una instalación existente
 
@@ -112,7 +112,7 @@ conectado únicamente a la red RotechOS, usa el método B.
 
 ### B. Sin internet: «Instalar desde un ZIP»
 
-1. En otro dispositivo con internet, descarga el asset `rotechos-v2026.10.zip` de la release.
+1. En otro dispositivo con internet, descarga el asset `rotechos-v2026.11.zip` de la release.
 2. Pasa el ZIP al dispositivo que está conectado a la máquina. No lo descomprimas.
 3. Abre **CONFIGURACIÓN → ACTUALIZAR (OTA)**.
 4. Pulsa **Instalar desde un ZIP** y selecciona el ZIP intacto.
@@ -168,7 +168,7 @@ distintos y tienen pasos distintos.
 ### Paso 1: copiar RotechOS a la SD
 
 1. Apaga la máquina y saca la tarjeta SD.
-2. Descomprime `rotechos-v2026.10.zip` en el ordenador.
+2. Descomprime `rotechos-v2026.11.zip` en el ordenador.
 3. Abre la carpeta `ROTECHOS/` del ZIP.
 4. Copia su **contenido** a la raíz de la tarjeta SD. No copies la carpeta `ROTECHOS/` como
    una carpeta adicional.
@@ -238,6 +238,30 @@ El husillo tiene dos variantes:
 - **Makita RT0701C manual:** velocidad en su dial e interruptor físico; RotechOS no puede
   encenderlo ni apagarlo desde la interfaz.
 
+### Ethernet opcional con el adaptador ESP32
+
+Es opcional y aún está **pendiente de validar en banco con el adaptador real**. El adaptador
+sustituye al módulo WiFi y necesita su propio firmware, que no viaja en el paquete:
+
+1. Descarga `WiFiModule_esp32eth.bin` de
+   [TeamGloomy](https://github.com/gloomyandy/WiFiSocketServerRTOS/tree/v2.2.0-dev/releases)
+   y cópialo en `0:/firmware/`.
+2. Añade esta línea al `0:/sys/board.txt` de la máquina, sin quitar nada de lo que ya tiene:
+
+   ```text
+   wifi.moduleType = esp32eth
+   ```
+
+3. Reinicia y graba el firmware del módulo con `M997 S1`.
+4. Conecta el cable y pulsa **CONFIGURACIÓN → Red → Probar Ethernet**.
+
+La máquina tiene 60 segundos para conseguir IP. Si la consigue, Ethernet queda guardado (se
+crea `sys/net-ethernet.g`) y entras por la IP que muestre tu router o por
+`http://rotechcnc.local`. Si no la consigue, vuelve sola a tu WiFi o a la red RotechOS y no se
+guarda nada. Con Ethernet ya guardado, si arranca sin cable hace lo mismo a los 60 segundos y
+lo reintenta en el arranque siguiente. Si el cable se suelta con la máquina encendida, el
+módulo no lo avisa: vuelve a enchufarlo o reinicia para que actúe esa vuelta automática.
+
 ## 3. Qué conserva una actualización
 
 El instalador de la interfaz conserva los ficheros de tu máquina, entre ellos:
@@ -245,6 +269,7 @@ El instalador de la interfaz conserva los ficheros de tu máquina, entre ellos:
 - `sys/config-machine.g`: calibración de esa máquina.
 - `sys/config.g`: mapeo y configuración de motores.
 - `sys/config-override.g` y `sys/user-daemon.g`, si existen.
+- `sys/net-ethernet.g`, si usas Ethernet: se crea solo cuando Ethernet ya tiene IP.
 - `sys/wifi-passwords.g`: credenciales de tu WiFi.
 - `sys/ap-key.g`: clave propia del punto de acceso de esta máquina; la OTA no la toca.
 

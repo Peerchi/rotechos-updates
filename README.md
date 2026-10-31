@@ -22,11 +22,11 @@ La guía completa está en **[GUIA_INSTALACION.md](GUIA_INSTALACION.md)**.
 ## Descargar una versión
 
 Abre **[la última versión](https://github.com/Peerchi/rotechos-updates/releases/latest)** y
-entra en la sección **Assets**. En la release v2026.10 los ficheros se llaman así:
+entra en la sección **Assets**. En la release v2026.11 los ficheros se llaman así:
 
 | Asset de la release | Cuándo descargarlo |
 |---|---|
-| `rotechos-v2026.10.zip` | Siempre. Es el paquete de RotechOS para actualizar desde la interfaz o preparar una tarjeta SD nueva. |
+| `rotechos-v2026.11.zip` | Siempre. Es el paquete de RotechOS para actualizar desde la interfaz o preparar una tarjeta SD nueva. |
 | `SHA256SUMS.txt` | Recomendado. Permite comprobar que la descarga no ha quedado dañada. |
 | `firmware.bin` | Solo para una Scylla nueva o para una placa que no tenga RepRapFirmware 3.5.4. Es el firmware de la placa, no el del módulo WiFi. |
 | `MANUAL_USUARIO_ROTECHOS.pdf` | Opcional. Manual de usuario completo. |
@@ -68,7 +68,7 @@ escribir. Si el dispositivo no tiene internet, usa el método siguiente.
 ### Sin internet: «Instalar desde un ZIP»
 
 1. En otro dispositivo con internet, descarga de la release el ZIP exacto, por ejemplo
-   `rotechos-v2026.10.zip`. No lo descomprimas.
+   `rotechos-v2026.11.zip`. No lo descomprimas.
 2. Pasa ese ZIP al teléfono, tableta u ordenador que está conectado a la máquina, aunque esa
    conexión sea únicamente a la red WiFi **RotechOS**.
 3. Entra en **CONFIGURACIÓN → ACTUALIZAR (OTA)**, pulsa **Instalar desde un ZIP** y elige el
@@ -100,7 +100,7 @@ Para una instalación nueva, sigue la sección de instalación de la guía en es
    grábalo primero en la tarjeta SD. Al arrancar, el bootloader debe renombrarlo a
    `FIRMWARE.CUR`; apaga la placa antes de continuar. Si la release no incluye ese asset, la
    guía enlaza el port de RepRapFirmware para placas STM32 de TeamGloomy.
-2. Descomprime `rotechos-v2026.10.zip` en el ordenador. Copia el **contenido** de su carpeta
+2. Descomprime `rotechos-v2026.11.zip` en el ordenador. Copia el **contenido** de su carpeta
    `ROTECHOS/` a la raíz de la tarjeta SD. Deben quedar directamente `www/`, `sys/`,
    `macros/`, `firmware/` y `licenses/`.
 3. El ZIP incluye `ROTECHOS/firmware/WiFiModule_esp32.bin`. Solo hace falta grabarlo con
@@ -136,7 +136,7 @@ interfaz.
 - La seta de emergencia debe estar cableada en la alimentación. Un botón o una orden que
   dependa del software no la sustituye.
 
-La versión v2026.10 sigue marcada en sus notas como candidata pendiente de validación con la
+La versión v2026.11 sigue marcada en sus notas como candidata pendiente de validación con la
 máquina encendida. Lee `NOTAS_DE_VERSION.md` antes de ponerla a trabajar.
 
 ## Manual de usuario

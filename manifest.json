@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-10-31",
-  "changelog_es": "Revisión completa: husillo y finales de carrera, jog, configuración, OTA y manual corregidos. Pendiente de validación en banco.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-10-31",
-  "zip": "rotechos-v2026.10.zip",
-  "zip_sha256": "25643170ae3e15ffa60daed4e6c5307149c2ba486120e0a872bec4b167325005",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/ec89e46aef0e01945e03c54cdf2e2d2f2fc70ef3/paquete/rotechos.zip",
-  "paquete_sha256": "25643170ae3e15ffa60daed4e6c5307149c2ba486120e0a872bec4b167325005",
+  "rotechos_version": "2026-11-01",
+  "changelog_es": "Interfaz más fluida con la placa y Ethernet con adaptador ESP32",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-01",
+  "zip": "rotechos-v2026.11.zip",
+  "zip_sha256": "2b5bef6bfeb334b6f2acb1784190cd0b0e99b39a9aa9b8654a0658f86b6e6568",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/f9c44e965cde2fd4292507775a0faf95805fe54e/paquete/rotechos.zip",
+  "paquete_sha256": "2b5bef6bfeb334b6f2acb1784190cd0b0e99b39a9aa9b8654a0658f86b6e6568",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -32,6 +32,7 @@
     "2026-10-28",
     "2026-10-29",
     "2026-10-30",
-    "2026-10-31"
+    "2026-10-31",
+    "2026-11-01"
   ]
 }
