@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-01",
-  "changelog_es": "Interfaz más fluida con la placa y Ethernet con adaptador ESP32",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-01",
+  "rotechos_version": "2026-11-02",
+  "changelog_es": "Sin conexion no se mueve, la OTA reintenta cada fichero y la tension solo se vigila si esta configurada.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-02",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "2b5bef6bfeb334b6f2acb1784190cd0b0e99b39a9aa9b8654a0658f86b6e6568",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/f9c44e965cde2fd4292507775a0faf95805fe54e/paquete/rotechos.zip",
-  "paquete_sha256": "2b5bef6bfeb334b6f2acb1784190cd0b0e99b39a9aa9b8654a0658f86b6e6568",
+  "zip_sha256": "122dca0ab34db60094f1de5062d26b3880fd97a0d251f7aa6444c0af5e83c59c",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/b88b61a380ace2b5b5ed7bb742b11479bc35a5fe/paquete/rotechos.zip",
+  "paquete_sha256": "122dca0ab34db60094f1de5062d26b3880fd97a0d251f7aa6444c0af5e83c59c",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -33,6 +33,7 @@
     "2026-10-29",
     "2026-10-30",
     "2026-10-31",
-    "2026-11-01"
+    "2026-11-01",
+    "2026-11-02"
   ]
 }
