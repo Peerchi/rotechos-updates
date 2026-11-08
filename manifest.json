@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-02",
-  "changelog_es": "Sin conexion no se mueve, la OTA reintenta cada fichero y la tension solo se vigila si esta configurada.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-02",
+  "rotechos_version": "2026-11-03",
+  "changelog_es": "Manual nuevo de 24 paginas, primer arranque mas claro, Ethernet directo y actualizacion que comprueba que la maquina esta parada antes de escribir.",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-03",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "122dca0ab34db60094f1de5062d26b3880fd97a0d251f7aa6444c0af5e83c59c",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/b88b61a380ace2b5b5ed7bb742b11479bc35a5fe/paquete/rotechos.zip",
-  "paquete_sha256": "122dca0ab34db60094f1de5062d26b3880fd97a0d251f7aa6444c0af5e83c59c",
+  "zip_sha256": "5a0eadff44982545149167a5f27078de77721a549151feb488a1196dc6c07c2d",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/7c154881e049b4065d386d175f4239bbc12d82bd/paquete/rotechos.zip",
+  "paquete_sha256": "5a0eadff44982545149167a5f27078de77721a549151feb488a1196dc6c07c2d",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -34,6 +34,7 @@
     "2026-10-30",
     "2026-10-31",
     "2026-11-01",
-    "2026-11-02"
+    "2026-11-02",
+    "2026-11-03"
   ]
 }

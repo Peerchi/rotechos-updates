@@ -133,8 +133,8 @@ Conserva los ficheros propios de la máquina: `config.g`, `config-machine.g`,
 actualiza el firmware del módulo WiFi.
 
 Si la subida se corta, la tarjeta puede quedar con parte de los ficheros nuevos. **No hay
-vuelta atrás automática.** Repite la instalación completa. Si la interfaz deja de cargar,
-ve [Si la interfaz no carga](#5-si-la-interfaz-no-carga).
+vuelta atrás automática.** No reinicies ni repitas la instalación sin revisar la SD y la copia
+de configuración. Solicita ayuda a soporte para comprobar el estado antes de continuar.
 
 ### Si tu versión es anterior a la 2026-10-09
 
@@ -143,6 +143,12 @@ Para esa primera actualización, usa la [actualización manual con la tarjeta SD
 o sigue exactamente las notas de la release que tengas instalada.
 
 ## 2. Instalación nueva
+
+**Antes de mecanizar:** verifica con el integrador que el paro físico detiene el
+husillo de tu máquina y que Z queda sujeto cuando se cortan los motores. El
+comportamiento de M112 y del VFD depende del firmware, modo y cableado; no lo
+des por comprobado solo porque la interfaz muestre una alarma. La fresadora
+manual Makita requiere su propio corte de alimentación.
 
 Esta sección es para una BTT Scylla V1.0 nueva o para una máquina que todavía no tenga la
 tarjeta SD preparada. La calibración y el cableado son propios de cada máquina.
@@ -201,7 +207,7 @@ Si la red RotechOS ya aparece, no repitas este paso.
 ### Paso 3: primer arranque y red
 
 1. Vuelve a poner la tarjeta SD y enciende.
-2. La máquina crea su propia red WiFi **RotechOS** con una clave única para esa máquina. Léela en la etiqueta entregada con ella o, si no la tienes, en CONFIGURACIÓN → Red.
+2. La máquina crea su propia red WiFi **RotechOS** con la clave de esa máquina: la de su etiqueta si te la entregaron con ella. En una SD recién instalada aún no hay clave propia y vale la inicial `rotechos`: entra y crea la tuya en CONFIGURACIÓN → Red → «Generar otra clave».
 3. Conecta el móvil, tableta u ordenador a esa red y abre `http://192.168.1.1`.
 4. Si quieres usar la red WiFi del taller, entra en **CONFIGURACIÓN → Red** y configúrala.
    Si la máquina no consigue conectarse, la red propia RotechOS vuelve a estar disponible.
@@ -253,14 +259,24 @@ sustituye al módulo WiFi y necesita su propio firmware, que no viaja en el paqu
    ```
 
 3. Reinicia y graba el firmware del módulo con `M997 S1`.
-4. Conecta el cable y pulsa **CONFIGURACIÓN → Red → Probar Ethernet**.
+4. En **CONFIGURACIÓN → Red**, elige el modo y pulsa **Probar Ethernet**.
 
-La máquina tiene 60 segundos para conseguir IP. Si la consigue, Ethernet queda guardado (se
-crea `sys/net-ethernet.g`) y entras por la IP que muestre tu router o por
-`http://rotechcnc.local`. Si no la consigue, vuelve sola a tu WiFi o a la red RotechOS y no se
-guarda nada. Con Ethernet ya guardado, si arranca sin cable hace lo mismo a los 60 segundos y
-lo reintenta en el arranque siguiente. Si el cable se suelta con la máquina encendida, el
-módulo no lo avisa: vuelve a enchufarlo o reinicia para que actúe esa vuelta automática.
+**Router o LAN (DHCP):** conecta la CNC a un router/switch que proporcione DHCP. Cuando obtenga
+IP, queda guardada (`sys/net-ethernet.g`) y se accede por la IP del router o
+`http://rotechcnc.local`. Conecta también el ordenador por cable o el móvil a la Wi-Fi de esa
+misma LAN para que puedan usar RotechOS Pendant como MPG mientras el PC está conectado.
+
+**Directo al PC (IP fija):** conecta la CNC directamente al ordenador. La CNC usa
+`192.168.50.1/24`; configura el Ethernet del ordenador como `192.168.50.2`, máscara
+`255.255.255.0`, y deja puerta de enlace y DNS vacíos. Abre `http://192.168.50.1`.
+En este modo el adaptador no mantiene a la vez el punto de acceso Wi-Fi RotechOS, así que el
+móvil no puede conectarse directamente a la CNC como MPG. Para usar PC por cable y móvil por
+Wi-Fi simultáneamente, usa un router/punto de acceso con Ethernet en la misma LAN.
+
+La máquina tiene 60 segundos para conseguir IP. Si no la consigue, vuelve sola a su Wi-Fi o a
+la red RotechOS. Al dejar de usar Ethernet se borra su perfil guardado. Con Ethernet ya
+guardado, si arranca sin cable hace lo mismo y lo reintenta en el arranque siguiente. Si el
+cable se suelta con la máquina encendida, el módulo no lo avisa: vuelve a enchufarlo o reinicia.
 
 ## 3. Qué conserva una actualización
 
@@ -270,6 +286,7 @@ El instalador de la interfaz conserva los ficheros de tu máquina, entre ellos:
 - `sys/config.g`: mapeo y configuración de motores.
 - `sys/config-override.g` y `sys/user-daemon.g`, si existen.
 - `sys/net-ethernet.g`, si usas Ethernet: se crea solo cuando Ethernet ya tiene IP.
+- `sys/net-ethernet-direct.g`, si Ethernet está en modo directo al PC.
 - `sys/wifi-passwords.g`: credenciales de tu WiFi.
 - `sys/ap-key.g`: clave propia del punto de acceso de esta máquina; la OTA no la toca.
 

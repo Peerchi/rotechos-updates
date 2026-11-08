@@ -81,8 +81,8 @@ Este instalador comprueba el ZIP y escribe los ficheros de `ROTECHOS/sys/`,
 No usa `firmware.bin` ni vuelve a grabar el firmware del módulo WiFi durante una actualización.
 
 Si una subida se interrumpe, la tarjeta puede quedar con parte de los ficheros nuevos. No hay
-vuelta atrás automática: repite la instalación; si la interfaz no arranca, sigue la sección
-correspondiente de la guía.
+vuelta atrás automática: no reinicies ni repitas la instalación sin revisar la SD y la copia
+de configuración. Si necesitas ayuda, consulta la guía o contacta con soporte.
 
 Las versiones anteriores a la 2026-10-09 no tienen estos dos botones. En ese caso, sigue la
 guía para actualizar manualmente.
