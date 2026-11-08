@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-03",
-  "changelog_es": "Manual nuevo de 24 paginas, primer arranque mas claro, Ethernet directo y actualizacion que comprueba que la maquina esta parada antes de escribir.",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-03",
+  "rotechos_version": "2026-11-08",
+  "changelog_es": "Conexion mas estable, reautenticacion con PIN, ARCHIVOS propone borrar G-code viejos y CONFIGURACION con diseno comun",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-08",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "5a0eadff44982545149167a5f27078de77721a549151feb488a1196dc6c07c2d",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/7c154881e049b4065d386d175f4239bbc12d82bd/paquete/rotechos.zip",
-  "paquete_sha256": "5a0eadff44982545149167a5f27078de77721a549151feb488a1196dc6c07c2d",
+  "zip_sha256": "7fe00275e6b291e1be5f13e233371a9641803d26cb7980042454553be1b39238",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/85fe7cd957367e0896ef20286f206d45502ddd54/paquete/rotechos.zip",
+  "paquete_sha256": "7fe00275e6b291e1be5f13e233371a9641803d26cb7980042454553be1b39238",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -35,6 +35,7 @@
     "2026-10-31",
     "2026-11-01",
     "2026-11-02",
-    "2026-11-03"
+    "2026-11-03",
+    "2026-11-08"
   ]
 }
