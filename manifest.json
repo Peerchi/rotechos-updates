@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-08",
-  "changelog_es": "Conexion mas estable, reautenticacion con PIN, ARCHIVOS propone borrar G-code viejos y CONFIGURACION con diseno comun",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-08",
+  "rotechos_version": "2026-11-11",
+  "changelog_es": "HOME con segundo toque, finales obligatorios antes de trabajar, malla que para con un final, firma OTA preparada y revision completa de la interfaz",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-11",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "7fe00275e6b291e1be5f13e233371a9641803d26cb7980042454553be1b39238",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/85fe7cd957367e0896ef20286f206d45502ddd54/paquete/rotechos.zip",
-  "paquete_sha256": "7fe00275e6b291e1be5f13e233371a9641803d26cb7980042454553be1b39238",
+  "zip_sha256": "884d51ac046f833e33a688221c533ad5d1cb423a08fb4eb146177dd46497ed16",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/ef9406f357b69b0d198568047ff7945eb6b31d15/paquete/rotechos.zip",
+  "paquete_sha256": "884d51ac046f833e33a688221c533ad5d1cb423a08fb4eb146177dd46497ed16",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -36,6 +36,7 @@
     "2026-11-01",
     "2026-11-02",
     "2026-11-03",
-    "2026-11-08"
+    "2026-11-08",
+    "2026-11-11"
   ]
 }
