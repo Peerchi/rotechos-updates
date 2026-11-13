@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-13",
-  "changelog_es": "Pruebas de banco en la interfaz, prueba de la sonda Z, configuracion reducida en el movil y actualizaciones verificadas enteras",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-13",
+  "rotechos_version": "2026-11-14",
+  "changelog_es": "Cable directo al PC: la maquina usa 192.168.8.200 (PC 192.168.8.2)",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-14",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "b8795d6ddd15e95dcd06f8f53a663ed4e22355c93b33991efae44d71b8124a0e",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/907dbd2db641de5724afd650557419b8e054d401/paquete/rotechos.zip",
-  "paquete_sha256": "b8795d6ddd15e95dcd06f8f53a663ed4e22355c93b33991efae44d71b8124a0e",
+  "zip_sha256": "bba32090a94ba6fdecdbf60f95775233d97780dc87e9b0c8da8e1ca53f65d179",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/c87ffc40ecebf774f57d3ff44b874e3008ad7254/paquete/rotechos.zip",
+  "paquete_sha256": "bba32090a94ba6fdecdbf60f95775233d97780dc87e9b0c8da8e1ca53f65d179",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -38,6 +38,7 @@
     "2026-11-03",
     "2026-11-08",
     "2026-11-11",
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-14"
   ]
 }

@@ -267,8 +267,8 @@ IP, queda guardada (`sys/net-ethernet.g`) y se accede por la IP del router o
 misma LAN para que puedan usar RotechOS Pendant como MPG mientras el PC está conectado.
 
 **Directo al PC (IP fija):** conecta la CNC directamente al ordenador. La CNC usa
-`192.168.50.1/24`; configura el Ethernet del ordenador como `192.168.50.2`, máscara
-`255.255.255.0`, y deja puerta de enlace y DNS vacíos. Abre `http://192.168.50.1`.
+`192.168.8.200/24`; configura el Ethernet del ordenador como `192.168.8.2`, máscara
+`255.255.255.0`, y deja puerta de enlace y DNS vacíos. Abre `http://192.168.8.200`.
 En este modo el adaptador no mantiene a la vez el punto de acceso Wi-Fi RotechOS, así que el
 móvil no puede conectarse directamente a la CNC como MPG. Para usar PC por cable y móvil por
 Wi-Fi simultáneamente, usa un router/punto de acceso con Ethernet en la misma LAN.
