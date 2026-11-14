@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-14",
-  "changelog_es": "Cable directo al PC: la maquina usa 192.168.8.200 (PC 192.168.8.2)",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-14",
+  "rotechos_version": "2026-11-15",
+  "changelog_es": "Modo CNC, arranque blindado ante una configuracion mala y actualizar con PIN sin falso error de recuperacion",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-15",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "bba32090a94ba6fdecdbf60f95775233d97780dc87e9b0c8da8e1ca53f65d179",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/c87ffc40ecebf774f57d3ff44b874e3008ad7254/paquete/rotechos.zip",
-  "paquete_sha256": "bba32090a94ba6fdecdbf60f95775233d97780dc87e9b0c8da8e1ca53f65d179",
+  "zip_sha256": "3378dccf7ec2e8d7709ca924739118e0517f9eec63eaac1d892bc7d7e3c049ea",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/194f528b3beaf07195245c99b0b217ec79d854dd/paquete/rotechos.zip",
+  "paquete_sha256": "3378dccf7ec2e8d7709ca924739118e0517f9eec63eaac1d892bc7d7e3c049ea",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -39,6 +39,7 @@
     "2026-11-08",
     "2026-11-11",
     "2026-11-13",
-    "2026-11-14"
+    "2026-11-14",
+    "2026-11-15"
   ]
 }
