@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-16",
-  "changelog_es": "PARO siempre en su sitio, Z aparte en el jog movil, manual del operador y actualizaciones mas robustas",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-16",
+  "rotechos_version": "2026-11-17",
+  "changelog_es": "Manual del operador revisado contra la interfaz y aviso de version nueva con mas contraste",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-17",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "6d9053a0af3348def85cb3e4cb21d49605df8ef7ee86d91f54ae004549df75ef",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/39628c980ca36fe8f58e2ef3f944a7d6325ec4ee/paquete/rotechos.zip",
-  "paquete_sha256": "6d9053a0af3348def85cb3e4cb21d49605df8ef7ee86d91f54ae004549df75ef",
+  "zip_sha256": "ad1f5ef0bfec3972c44880924b25ba100afae5dd620e831e5a3a8b64e12261d8",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/d0a3e8985a0ce7a8439a0a41986c4402f30fd51c/paquete/rotechos.zip",
+  "paquete_sha256": "ad1f5ef0bfec3972c44880924b25ba100afae5dd620e831e5a3a8b64e12261d8",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -41,6 +41,7 @@
     "2026-11-13",
     "2026-11-14",
     "2026-11-15",
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-17"
   ]
 }
