@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-17",
-  "changelog_es": "Manual del operador revisado contra la interfaz y aviso de version nueva con mas contraste",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-17",
+  "rotechos_version": "2026-11-20",
+  "changelog_es": "Cable directo con el adaptador Ethernet: al arrancar vuelve a escribir la IP fija 192.168.8.200",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-20",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "ad1f5ef0bfec3972c44880924b25ba100afae5dd620e831e5a3a8b64e12261d8",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/d0a3e8985a0ce7a8439a0a41986c4402f30fd51c/paquete/rotechos.zip",
-  "paquete_sha256": "ad1f5ef0bfec3972c44880924b25ba100afae5dd620e831e5a3a8b64e12261d8",
+  "zip_sha256": "32e9e1197df4feb2456da515ed8d1399b96eda35fa18870079ae528856980cdf",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/7b05a185d8c07dfbe60f474eddfcd9c13c64fba6/paquete/rotechos.zip",
+  "paquete_sha256": "32e9e1197df4feb2456da515ed8d1399b96eda35fa18870079ae528856980cdf",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -42,6 +42,7 @@
     "2026-11-14",
     "2026-11-15",
     "2026-11-16",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-20"
   ]
 }
