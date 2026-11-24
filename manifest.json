@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-25",
-  "changelog_es": "Ventilador termostatico en AUX0 y avisos de conexion segun el enlace (cable o WiFi)",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-25",
+  "rotechos_version": "2026-11-26",
+  "changelog_es": "El visor siempre dibuja el rectangulo de la maquina y la tarjeta Cargar G-code ya no lo tapa",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-26",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "09cc054c9ae41c5311848ae38d8c1ad631488262c697b52ad0d96030b0c16ace",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/e546f39a9e30625244a1b7efdffbf7c6be43f318/paquete/rotechos.zip",
-  "paquete_sha256": "09cc054c9ae41c5311848ae38d8c1ad631488262c697b52ad0d96030b0c16ace",
+  "zip_sha256": "cd9aaff11c642269c415a74bc51e4a68582a086bbf4e1d1c1fa798a00d35d67e",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/8bbe1aa3de36f7c55ed4bc5f9e019d393e548044/paquete/rotechos.zip",
+  "paquete_sha256": "cd9aaff11c642269c415a74bc51e4a68582a086bbf4e1d1c1fa798a00d35d67e",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -46,6 +46,7 @@
     "2026-11-20",
     "2026-11-22",
     "2026-11-24",
-    "2026-11-25"
+    "2026-11-25",
+    "2026-11-26"
   ]
 }
