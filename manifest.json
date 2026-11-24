@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-22",
-  "changelog_es": "Vigilancia de la conexion tambien con Ethernet: latido cada 2 s, pausa del trabajo a los 15 s y acceso de recuperacion",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-22",
+  "rotechos_version": "2026-11-24",
+  "changelog_es": "Sin aviso falso tras HOME, jog que dice que eje falta y jog continuo fluido por cable",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-24",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "4e641babf57711c05124af42677718f0976ef984a8123fc2051befd68be9ba2b",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/8fc85656c70dab584a06474e9502dafe59d9d799/paquete/rotechos.zip",
-  "paquete_sha256": "4e641babf57711c05124af42677718f0976ef984a8123fc2051befd68be9ba2b",
+  "zip_sha256": "3fd31e9d622b86ac5ad4a2e5189d5e1d568673d04bbc9d45352dcdf31b7d1026",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/7737f7f37eec1f4ed1442f0e24a6f03167aea1cc/paquete/rotechos.zip",
+  "paquete_sha256": "3fd31e9d622b86ac5ad4a2e5189d5e1d568673d04bbc9d45352dcdf31b7d1026",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -44,6 +44,7 @@
     "2026-11-16",
     "2026-11-17",
     "2026-11-20",
-    "2026-11-22"
+    "2026-11-22",
+    "2026-11-24"
   ]
 }
