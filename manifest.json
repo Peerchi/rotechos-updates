@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-26",
-  "changelog_es": "El visor siempre dibuja el rectangulo de la maquina y la tarjeta Cargar G-code ya no lo tapa",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-26",
+  "rotechos_version": "2026-11-27",
+  "changelog_es": "Tras HOME el jog ya no se bloquea, vigilante de latido mas prudente y la actualizacion dice la causa real si falla",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-27",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "cd9aaff11c642269c415a74bc51e4a68582a086bbf4e1d1c1fa798a00d35d67e",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/8bbe1aa3de36f7c55ed4bc5f9e019d393e548044/paquete/rotechos.zip",
-  "paquete_sha256": "cd9aaff11c642269c415a74bc51e4a68582a086bbf4e1d1c1fa798a00d35d67e",
+  "zip_sha256": "e0b6c7f512eac27c34e2aa74ab6e8e0ac6a45177daad302a05d706df98af4acd",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/06e99bf5a9a85c5b8090573865d6d18e6ba43e61/paquete/rotechos.zip",
+  "paquete_sha256": "e0b6c7f512eac27c34e2aa74ab6e8e0ac6a45177daad302a05d706df98af4acd",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -47,6 +47,7 @@
     "2026-11-22",
     "2026-11-24",
     "2026-11-25",
-    "2026-11-26"
+    "2026-11-26",
+    "2026-11-27"
   ]
 }
