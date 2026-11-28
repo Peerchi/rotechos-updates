@@ -1,11 +1,11 @@
 {
-  "rotechos_version": "2026-11-27",
-  "changelog_es": "Tras HOME el jog ya no se bloquea, vigilante de latido mas prudente y la actualizacion dice la causa real si falla",
-  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-27",
+  "rotechos_version": "2026-11-28",
+  "changelog_es": "Cambio manual de herramienta sin palpador fijo, jog más fluido, reintentos de red y el instalador conserva tus macros modificadas",
+  "release_url": "https://github.com/Peerchi/rotechos-updates/releases/tag/v2026-11-28",
   "zip": "rotechos-v2026.11.zip",
-  "zip_sha256": "e0b6c7f512eac27c34e2aa74ab6e8e0ac6a45177daad302a05d706df98af4acd",
-  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/06e99bf5a9a85c5b8090573865d6d18e6ba43e61/paquete/rotechos.zip",
-  "paquete_sha256": "e0b6c7f512eac27c34e2aa74ab6e8e0ac6a45177daad302a05d706df98af4acd",
+  "zip_sha256": "5d69de0cbd6a4f0ae2b25b23bd10715ebff25c381fc62cc4c5247db94de1f4ee",
+  "paquete_url": "https://raw.githubusercontent.com/Peerchi/rotechos-updates/219493f2c1c6bc31e5effce34b489bfc5fd72b64/paquete/rotechos.zip",
+  "paquete_sha256": "5d69de0cbd6a4f0ae2b25b23bd10715ebff25c381fc62cc4c5247db94de1f4ee",
   "versiones": [
     "2026-10-04",
     "2026-10-06",
@@ -48,6 +48,7 @@
     "2026-11-24",
     "2026-11-25",
     "2026-11-26",
-    "2026-11-27"
+    "2026-11-27",
+    "2026-11-28"
   ]
 }
